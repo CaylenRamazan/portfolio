@@ -1,0 +1,214 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(43, 41, 41);
+    color: white;
+}
+
+/*homepage css*/
+.home-page{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1vw;
+    color: black;
+}
+.profielfoto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    background-color: white;
+    margin-left: 4vw;
+    border-radius: 1vw;
+    box-shadow: 0.2vw 0.2vw 0.5vw 0.2vw black;
+}
+.foto-caylen{
+    margin-top: 1vw;
+    width: 24vw;
+    height: 24vw;
+    border-radius: 12vw;
+    object-fit: cover;
+}
+.profielfoto-naam{
+    max-width: 100%;
+    font-size: 4vw;
+}
+
+.hp-informatie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    background-color: white;
+    padding: 3vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    border-radius: 1vw;
+    box-shadow: 0.2vw 0.2vw 0.5vw 0.2vw black;
+}
+.kop-hp-informatie{
+    font-size: 3vw;
+}
+.tekst-hp-informatie{
+    font-size: 2vw;
+}
+/* css media voor kleinere schermen*/
+@media (max-width: 768px) {
+    .home-page {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profielfoto, .hp-informatie {
+        width: 90%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 2vw;
+    }
+    .profielfoto{
+        width: 96%;
+    }
+
+    .foto-caylen {
+        width: 60vw;
+        height: 60vw;
+        border-radius: 30vw;
+    }
+
+    .profielfoto-naam {
+        font-size: 6vw;
+    }
+
+    .kop-hp-informatie {
+        font-size: 6vw;
+    }
+
+    .tekst-hp-informatie {
+        font-size: 4vw;
+    }
+}
+
+/*projects page css*/
+.project-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 7vw;
+    margin-bottom: 10vw;
+}
+.projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0.2vw 0.2vw 0.5vw 0.2vw black;
+}
+.project-foto{
+    margin-top: 0.3vw;
+    width: 98%;
+    height: 17.5vw;
+    object-fit: cover;
+}
+.project-link{
+    text-decoration: none;
+    color: black;
+    font-size: 2vw;
+    padding: 0.5vw;
+    transition: all 0.7s ;
+}
+.project-link:hover{
+    color: grey;
+}
+
+/* css media voor kleinere schermen*/
+@media only screen and (max-width: 768px) {
+    .project-div{
+        grid-template-columns: 1fr;
+    }
+    .project-foto{
+        height: 35vw;
+    }
+    .project-link{
+        font-size: 5vw;
+    }
+}
+
+
+
+/*about me css*/
+.div-about-me{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3vw;
+    margin: 3vw;
+    color: black;
+}
+.eigenschappen-kennis{
+    background-color: white;
+    box-shadow: 0.2vw 0.2vw 0.5vw 0.2vw black;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2vw;
+}
+.kop-about-me{
+    margin: 0;
+    font-size: 3.5vw;
+}
+.tekst-about-me{
+    font-size: 1.4vw;
+}
+.div-about-me2{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 3vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    color: black;
+}
+table{
+    background-color: white;
+    width: 100%;
+    font-size: 1.4vw;
+    height: 9vw;
+    padding: 1vw;
+    border-radius: 2vw;
+    box-shadow: 0.2vw 0.2vw 0.5vw 0.2vw black;
+}
+.checked {
+    color: yellow;
+  }
+  
+@media only screen and (max-width: 768px) {
+    .div-about-me{
+        grid-template-columns: 1fr;
+    }
+    .kop-about-me{
+        font-size: 6vw;
+    }
+    .tekst-about-me{
+        font-size: 3vw;
+    }
+    .div-about-me2{
+        grid-template-columns: 1fr;
+    }
+    table{
+        font-size: 3vw;
+    }
+}
+/*footer css*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 1vw;
+    margin-top: 3vw;
+}

@@ -1,0 +1,21 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 8vw;
+}
+.error-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vw;
+}
+@media (max-width: 768px) {
+    .error-div{
+        font-size: 3.4vw;
+    }
+    h1{
+        font-size: 12vw;
+    }
+}

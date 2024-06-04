@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 1vw 3vw;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.homeknop a {
+    color: white;
+    text-decoration: none;
+    font-size: 3.5vw;
+    font-weight: bold;
+}
+.homeknop  {
+    list-style-type: none;
+
+}
+
+
+.navlinks {
+    list-style: none;
+    display: flex;
+    gap: 2vw;
+    margin: 0;
+    padding: 0;
+}
+
+.navlinks li {
+    display: inline;
+    margin-right: 3vw;
+}
+
+.navlinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.75vw;
+    list-style-type: none;
+    transition: all 0.7s ;
+}
+
+.navlinks a:hover {
+    text-shadow: 0.2vw 0.2vw 0.2vw  grey;
+}
+
+.dropdownC {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-contentC {
+    display: none;
+    position: absolute;
+    background-color: lightgray;
+    min-width: 120px;
+    max-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    /*left: 89%; */
+    top: 100%;
+}
+
+.dropdown-contentC a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-contentC a:hover {
+    background-color: gray;
+    color: white;
+}
+
+.dropdownC:hover .dropdown-contentC {
+    display: block;
+}
+
+/* css media voor kleinere schermen*/
+@media (max-width: 768px) {
+    .homeknop a{
+        font-size: 7vw;
+    }
+    .navlinks a{
+        font-size: 3.5vw;
+    }
+}
